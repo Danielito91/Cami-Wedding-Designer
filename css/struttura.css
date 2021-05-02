@@ -1,0 +1,274 @@
+
+/*============================================================
+//--//-->  Libreria interna da utilizzare nei miei progetti
+==============================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    /*colori,sfondi e altro*/
+    --sfondo-elementi: #223446;
+    --colore-testo: white;
+    --bg-page: rgb(243, 226, 226);
+    --colore-titolo : rgb(9, 9, 49);
+    --colore-testo1 : rgb(82, 77, 77);
+    --colore-secondario : #55b1f5;
+    --no: none;
+    /*grandezze per div,immagini e ..*/
+    --altezza:100vh;
+    --larghezza:100%;
+    --larghezza-immagini: 32vmax;
+    /*grandezze per testo,padding,margin e border*/
+    --size-testo: 1.2rem;
+    --letter-spacing: 3px;
+    --padding: 10px;
+    --margin: 10px;
+    --border: 1px solid red;
+}
+::selection {
+    color: black;
+    background:rgb(252, 215, 215);
+}
+  ::-webkit-scrollbar {
+    width: 0.8em;
+    height: 0.8em;
+    background: var(--colore-testo);
+    z-index: 100;
+}
+  ::-webkit-scrollbar-thumb {
+    min-height: 0.8em;
+    min-width: 0.8em;
+    background: var(--sfondo-elementi);
+}
+/*============================================================
+//--//-->  Classi css riguardo i display (flex)
+==============================================================*/
+/*questa classe è un semplice flex*/
+.flex{
+   display: flex;
+   font-size: var(--size-testo);
+   padding: var(--padding);
+}
+/*questa classe è un semplice flex responsive*/
+.flex-responsive {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--size-testo);
+}
+@media (max-width:678px) {
+    .flex-responsive {
+        flex-direction: column;
+    }
+}
+/*questa classe è un semplice flex con allineamento a centro*/
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--size-testo);
+    padding: var(--padding);
+    height: var(--altezza);
+    width: var(--larghezza);
+}
+/**questa classe è un semplice flex adatto per una navbar*/
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    --altezza:10vh;
+    height: var(--altezza);
+    width: var(--larghezza);
+    color: var(--colore-testo);
+    font-size: var(--size-testo);
+    cursor: pointer;
+    background: var(--bg);
+}
+.nav ul {
+    transition: 1s ease-in;
+}
+.nav li {
+    list-style:var(--no);
+    padding: var(--padding);
+}
+.nav li a {text-decoration: var(--no);color: var(--colore-testo);}
+.nav #menu_open {display: none;} /*icona del menu*/
+@media (max-width:768px) {
+    .nav ul {
+      position: fixed;
+      top: 9vh;
+      left:-100%;
+      height: var(--altezza);
+      width: var(--larghezza);
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+      z-index:101;
+    }
+    .nav #menu_open {display: block;} /*icona del menu*/
+}
+/*questa classe è un semplice flex che divide lo schermo in due(responsive)*/
+.container-diviso {
+   display: flex;
+   flex-direction: row;
+   height: var(--altezza);
+   width: var(--larghezza);
+}
+.container-diviso .left,.right {
+    --larghezza: 50%;
+    width: var(--larghezza);
+}
+@media (max-width:678px) {
+    .container-diviso {flex-direction: column;}
+    .container-diviso .left,.right {
+        --altezza:50%;
+        --larghezza:100%;
+       width: var(--larghezza);
+       height: var(--altezza);
+    }
+}
+/*============================================================
+//--//-->  Classi css riguardo i display (grid)
+==============================================================*/
+
+
+/*questa classe è un semplice stile della card nel grid*/
+.card-grid {
+    --altezza: 20vh;
+    --larghezza: 20vh;
+    height: var(--altezza);
+    width: var(--larghezza);
+    border:var(--border);
+    padding: var(--padding);
+    margin: 0 auto;
+}
+/*questa classe è un semplice grid responsive(3 colonne)*/
+.grid-3{
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding: var(--padding);
+    margin: var(--margin);
+}
+@media (max-width: 468px) {
+    .grid-3 { grid-template-columns: repeat(1, 1fr); }
+}
+@media (min-width: 468px) and (max-width: 768px)  {
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+/*questa classe è un semplice grid responsive(4 colonne)*/
+.grid-4{
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    padding: var(--padding);
+    margin: var(--margin);
+}
+@media (max-width: 468px) {
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 340px) {
+    .grid-4 { grid-template-columns: repeat(1, 1fr); }
+}
+@media (min-width: 468px) and (max-width: 768px)  {
+    .grid-4 { grid-template-columns: repeat(3, 1fr); }
+}
+/*============================================================
+//--//-->  Classi css riguardo il testo e immagini
+==============================================================*/
+/*questa classe è per il titolo e paragrafo*/
+.titolo{
+    --size-testo:2.2rem;
+    font-size: var(--size-testo);
+    color: var(--colore-titolo);
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+    padding: var(--padding);
+}
+.paragrafo {
+    --size-testo:1.3rem;
+    font-size: var(--size-testo);
+    color: var(--colore-testo1);
+    text-align: left;
+    letter-spacing: var(--letter-spacing);
+    padding: var(--padding);
+}
+@media (max-width:678px) {
+    .titolo {
+        --size-testo:1.6rem;
+        font-size: var(--size-testo);
+    }
+    .paragrafo{
+        --size-testo:1rem;
+        font-size: var(--size-testo);
+    }
+}
+@media (max-width:360px) {
+    .titolo {
+        --size-testo:1.4rem;
+        font-size: var(--size-testo);
+    }
+    .paragrafo{
+        --size-testo:0.8rem;
+        font-size: var(--size-testo);
+    }
+}
+/*questa classe è per un immagine*/
+.foto { width: var(--larghezza-immagini);}
+/*============================================================
+//--//-->  Classi css generali
+==============================================================*/
+
+/*mette al centro della pagina elementi,div e ..*/
+.centro{margin: 0 auto;}
+/*div container ..*/
+.container {
+    height: var(--altezza);
+    font-size: var(--size-testo);
+    color: var(--colore-testo1);
+    letter-spacing: var(--letter-spacing);
+}
+/*immagine come sfondo,totalmente responsive*/
+.bg-image {
+    height: var(--altezza);
+    font-size: var(--size-testo);
+    color: var(--colore-testo1);
+    letter-spacing: var(--letter-spacing);
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgCyP9Dxa3cdy7Z_SjB6fuIdxqOhhPvezcEQ&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-blend-mode: multiply;
+    z-index: -1;
+/*basta creare un altra classe dove impostare il tuo sfondo ma rimarrà sempre come questo!*/
+}
+/*video come sfondo,totalmente responsive*/
+.contenitore-bg-video {
+    position: relative;
+    overflow: hidden;
+    width:var(--larghezza);
+    height: var(--altezza);
+}
+.contenitore-bg-video video {
+    min-width: var(--larghezza);
+    min-height: var(--altezza);
+    z-index: 1;
+}
+.contenitore-bg-video .content-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: var(--larghezza);
+    height: var(--altezza);
+}

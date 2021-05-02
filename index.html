@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
+    <!--librerie (css)-->
+    <link href="/librerie/fontwesome/css/all.min.css" rel="stylesheet">
+    <!--main css-->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/struttura.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<div id="preloader">
+<div></div><div></div><div></div>
+</div>
+<body onload="showPage()">
+<!--navbar-->
+<nav id="navbar">
+    <div class="nav" id="toggle-color">
+     <!--<img class="foto" src="/assets/logo.png" id="logo" alt=""> -->
+        <i class="fas fa-bars" id="menu_open"></i>
+        <ul class="flex">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+        </ul>
+    </div>
+</nav>
+  <!--homepage-->
+  <section id="homepage">
+    <a name="home"></a>
+  <div class="homepage">
+        <div class="testo"><p>~ Camilla Dicarlo ~ </p></div>
+             <span class="testo_items">"Wedding  Event designer", "Wedding planner", "Al vostro servizio"</span> <br>
+             <span class="testo-inner"></span>
+        </div>
+  </div>
+</section>
+<!--chi sono-->
+<section id="about">
+<a name="about"></a>
+<div class="container-diviso">
+    <div class="left">
+        <h1 class="titolo">About me</h1>
+        <p class="paragrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi et
+             inventore totam nihil pariatur, corrupti fugiat veniam, vero modi quo impedit eum dolores repellat.
+              Nobis necessitatibus repellendus in voluptatem cum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi et
+              inventore totam nihil pariatur, corrupti fugiat veniam, vero modi quo impedit eum dolores repellat.
+               Nobis necessitatibus repellendus in voluptatem cum!
+        </p>
+        <div class="container-animation centro">
+            <div class="inner-image flex-center">
+                <img src="/assets/attestato.png" class="foto" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="right flex">
+        <div class="container-animation centro">
+            <div class="inner-image flex-center">
+                <img src="/assets/attestato.png" class="foto" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!--lavori-->
+<section id="skills">
+    <a name="work"></a>
+    <div class="lavori">
+    <div class="title">
+        <h1>I miei lavori</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+            elit. Voluptates ad blanditiis tempore fuga possimus dicta odio amet voluptatem asperiores consequatur ratione, beatae magni 
+            dolore aspernatur officia sapiente vel quas repellat!
+        </p>
+    </div>
+    <div class="bottoni">
+    <button class="button" data-filter="country">Country</button>
+    <button class="button" data-filter="natura">Natura</button>
+    <button class="button" data-filter="viaggio">Viaggio</button>
+    <button class="button" data-filter="fiori">Fiori</button>
+    </div>
+    <div class="immagini">
+    <!--prima immagine-->
+        <div class="image-card filter country">
+         <img src="/assets/torte.jpg" alt="">
+         <div class="dettagli">
+        <span>Sono country</span>
+         </div>
+        </div>
+    <!--prima immagine-->
+    <div class="image-card filter country">
+        <img src="/assets/sposi bianconero.jpg" alt="">
+        <div class="dettagli">
+       <span>Sono country</span>
+        </div>
+    </div>
+     <!--prima immagine-->
+     <div class="image-card filter country">
+        <img src="/assets/tavolo.jpg" alt="">
+        <div class="dettagli">
+       <span>Sono country</span>
+        </div>
+    </div>
+     <!--prima immagine-->
+     <div class="image-card filter country">
+        <img src="/assets/ulivo-centrotavola.jpeg" alt="">
+        <div class="dettagli">
+       <span>Sono country</span>
+        </div>
+    </div>
+     <!--prima immagine-->
+     <div class="image-card filter country">
+        <img src="/assets/ritomasseria.jpeg" alt="">
+        <div class="dettagli">
+       <span>Sono country</span>
+        </div>
+    </div>
+     <!--prima immagine-->
+     <div class="image-card filter country">
+        <img src="/assets/ulivo-centrotavola.jpeg" alt="">
+        <div class="dettagli">
+       <span>Sono country</span>
+        </div>
+    </div>
+    
+    <!--seconda immagine-->
+    <div class="image-card filter natura">
+        <img src="/assets/torte2.jpg" alt="">
+        <div class="dettagli">
+       <span>Sono natura</span>
+        </div>
+    </div>
+     <!--terza immagine-->
+     <div class="image-card filter viaggio">
+        <img src="/assets/tavolata.jpeg" alt="">
+        <div class="dettagli">
+       <span>Sono viaggio</span>
+        </div>
+    </div>
+      <!--quarta immagine-->
+      <div class="image-card filter fiori">
+        <img src="/assets/Mr Mrs fiori 2.jpg" alt="">
+        <div class="dettagli">
+       <span>Sono viaggio</span>
+        </div>
+    </div>
+  <!--fine immagini-->
+    </div>
+    </div>
+</section>
+<section id="recensioni">
+    <div class="recensioni"></div>
+</section>
+</body>
+<!--fine immagini-->
+
+<!--footer chat-->
+<div class="icone" id="icone_chat"> 
+    <a href=""  target="_blank"><i class="fab fa-whatsapp"></i></a> 
+    <a href="https://www.instagram.com/camilla.dicarlo/"  target="_blank"> <i class="fab fa-instagram"></i> </a> 
+    <a href="https://www.facebook.com/camilla.dicarlo.14"  target="_blank"> <i class="fab fa-facebook"></i></a> 
+</div>
+<div class="footer-chat" id="chat">
+    <i class="far fa-comment"></i>
+</div>
+
+
+<!--js librerie-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/librerie/typed/typed.min.js"></script>
+<script src="/librerie/scroll/scroll-out.js"></script>
+<!--js main-->
+<script src="/js/main.js"></script>
+</html>

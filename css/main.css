@@ -1,0 +1,280 @@
+/*======================================
+//--//-->   Stile generale
+======================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+/*variabili,selezione testo e scrollbar*/
+:root {
+  --bg: #684b33; /*background color*/
+  --color-text: white; /*colore del testo*/
+  --bg-pages: rgb(243, 226, 226); /*colore delle pagine*/
+  --color-title : rgb(9, 9, 49);/*color title*/
+  --color-text1 : rgb(82, 77, 77); /*color text1*/
+  --colore-secondario : #55b1f5; /*secondary color*/
+  /*grandezze per div,immagini e ..*/
+  --altezza:100vh;
+  --larghezza:100%;
+  --larghezza-immagini: 32vmax;
+  /*grandezze per testo,padding,margin e border*/
+  --size-testo: 1.2rem;
+  --letter-spacing: 3px;
+  --padding: 10px;
+  --margin: 10px;
+  --border: 1px solid red;
+}
+::selection {
+  color: black;
+  background:rgb(252, 215, 215);
+}
+/*preloader*/
+#preloader {
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   background: var(--bg);
+   min-height: 100vh;
+   width: 100%;
+   position:fixed;
+   opacity: 1;
+   z-index: 1001;
+  }
+  #preloader div {
+    margin-left: 8px;
+    width: 20px;
+    border-radius: 50%;
+    background: white;
+    animation: preloader 1.1s infinite;
+  }
+  #preloader div:nth-child(1) {animation-delay: -0.24s;}
+  #preloader div:nth-child(2) {animation-delay: -0.12s;}
+  #preloader div:nth-child(3) {animation-delay: 0;}
+  @keyframes preloader {
+    0% {height: 40px;}
+    50%, 100% {height: 20px;}
+  }
+/*======================================
+//--//-->   Navbar
+======================================*/
+.nav li::before{
+     content: "";
+     position: absolute;
+     width: 0px;
+     height: 2px;
+     background: var(--color-text);
+     top: 8vh; 
+}
+.nav li:hover::before {
+  animation: border_bottom 1s ease-in-out;
+}
+ @keyframes border_bottom {
+   from {
+     width: 0px;
+   } to {
+     width: 30px;
+   }
+ }
+ /*======================================
+//--//-->   Homepage
+======================================*/
+
+.homepage{
+  height: 100vh;
+  background: url(/assets/sfondo\ Homepage.jpg) no-repeat  center center/cover;
+  z-index: -1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+  background-color: #79746c;
+  background-blend-mode: multiply;
+  flex-direction: column;
+  position: relative;
+}
+.testo{position: absolute;top: 40%;}
+.testo,p{
+  font-size: 2.5vmax;
+}
+.testo,span {
+  font-size: 2vmax;
+  letter-spacing: 2px;
+  font-family: 'Prompt', sans-serif;
+  font-weight: bold;
+  font-family: 'Waiting for the Sunrise, cursive';
+}
+.testo_items {display: none;}
+
+span.typed-cursor{
+    display: none;
+}
+/*======================================
+//--//-->   About
+======================================*/
+#about {
+  height: var(--altezza);
+  font-size: var(--size-testo);
+  color: var(--colore-testo1);
+  letter-spacing: var(--letter-spacing);
+}
+#about .right {
+  background: url(/assets/cami\ sfondopulito.png);
+  background-size: 30vmax;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.container-animation {
+  width: 65%;
+  height: 20vmax;
+  margin-top: 5vh;
+  border-radius: 7px;
+  box-shadow: 4px 1px 52px 2px #9c9c9c;
+  background: url(/assets/attestato1.png)no-repeat  center center/cover;
+  cursor: pointer;
+}
+.container-animation .inner-image {
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  clip-path: circle(10% at 0% 0%);
+  border-radius: 7px;
+  transition: clip-path 1.5s ease-in-out;
+}
+.container-animation .foto {width: 29vmax;}
+.container-animation:hover .inner-image {clip-path: circle(75%);}
+/*.right .container-animation {display: none;}*/
+.right .container-animation {
+  width: 55%;
+  margin-right:20vh;
+  display: none;
+}
+/*======================================
+//--//-->   skills
+======================================*/
+.lavori {
+  height: auto;
+  color: var(--bg);
+}
+.lavori h1{
+  text-align: center;
+  padding: 15px;
+}
+.lavori p {
+  font-size: 1rem;
+  text-align: left;
+}
+.bottoni {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.6rem;
+  margin-top: 3rem;
+}
+.bottoni button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--bg);
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: var(--color-text);
+}
+/*sezione immagini*/
+#skills {
+  background: url(/assets/velo.jpeg) no-repeat  center center/cover;
+  height: 150vh;
+}
+.immagini {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3vh;
+}
+.immagini .image-card {
+  margin: 2vh;
+  position: relative;
+  width: 320px;
+  display: none;
+}
+.immagini img {width: 100%;}
+.immagini .dettagli {
+  position: absolute;
+  bottom: 0;
+  height: 8vmax;
+  padding: 20px;
+  background:  rgba(0,0,0,0.6);
+  width: 100%;
+}
+.immagini .dettagli span {
+  font-size: 1rem;
+  font-weight: 800;
+}
+/*======================================
+//--//-->   recensioni
+======================================*/
+.recensioni {
+  height: 100vh;
+  border: 1px solid rosybrown;
+  color: var(--color-text);
+}
+ /*======================================
+//--//-->   footer chat
+======================================*/
+.icone {
+  position: fixed;
+  bottom: 45px;
+  padding: 10px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 2s;
+  height: 200px;
+}
+.compari {opacity: 1;animation: comparsa 2s;} /*far comparire icone al clicco*/
+
+.icone i {
+  font-size: 28px;
+  font-weight: 800;
+  color:#eae6e3;
+  padding: 15px;
+  cursor: pointer;
+}
+.icone i:hover{
+  color: black;
+}
+@keyframes comparsa {
+  0% {height: 0;}
+  33%{height: 90px;}
+  66%{height: 140px;}
+  100%{height: 200px;}
+}
+.footer-chat {
+  border-radius: 50%;
+  background: var(--bg);
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.footer-chat i {
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+}
+
+

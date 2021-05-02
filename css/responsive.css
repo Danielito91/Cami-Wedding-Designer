@@ -1,0 +1,52 @@
+@media (max-width: 1200px) {
+/*======================================
+//--//-->   Navbar
+======================================*/
+    .nav li:hover::before {animation: none;}
+    .nav {position: fixed;}
+    .nav .attiva {
+      left: 0;
+      height: auto;
+      background:var(--bg);
+      color: var(--colore-testo);
+ }
+
+}
+@media (min-width:220px) and (max-width:800px) {
+  /*======================================
+//--//-->   lavori
+======================================*/
+.immagini {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0rem;
+}
+/*======================================
+//--//-->   about
+======================================*/
+#about .left .container-animation {
+  display: none;
+}
+.right .container-animation {display: block;}
+#about .right {
+  background-position: right bottom;
+}
+
+}
+@media (max-width:450px){
+  .homepage{
+  height: 100vh;
+  background: url(/assets/mobilehomepage.jfif) no-repeat  center center/cover;
+  background-color: #79746c;
+  background-blend-mode: multiply;
+}}
+@media (max-width:300px) {
+  /*======================================
+//--//-->   lavori
+======================================*/
+.bottoni button {font-size: 0.6rem;}
+.immagini {grid-template-columns: repeat(1, 1fr);}
+.immagini .image-card {margin: 0 auto;}
+}
+
+
+ 
