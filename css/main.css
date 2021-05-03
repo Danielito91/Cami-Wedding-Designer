@@ -254,7 +254,7 @@ span.typed-cursor{
   z-index: 1;
   transition: all 1s ease-out;
 }
-#chat {right: -999px;}
+#chat {right: -100px;}
 .footer-chat i {
   font-size: 25px;
   font-weight: 800;
