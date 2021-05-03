@@ -21,9 +21,11 @@ window.onscroll = function() {
     let y = window.pageYOffset;
     if (y>140) {
         container_chat.style.right="15px";
+        div_nav.classList.add('bg-div');
     } else {
         container_chat.style.right="-999px";
         icone.classList.remove("compari");
+        div_nav.classList.remove('bg-div');
     }
 }
 /*=========================================
