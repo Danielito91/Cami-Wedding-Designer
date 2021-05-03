@@ -125,9 +125,15 @@ html {
     width: var(--larghezza);
 }
 @media (max-width:678px) {
-    .container-diviso {flex-direction: column;}
-    .container-diviso .left,.right {
-        --altezza:50%;
+    .container-diviso {flex-direction: column-reverse;}
+    .container-diviso .left {
+        --altezza:57%;
+        --larghezza:100%;
+       width: var(--larghezza);
+       height: var(--altezza);
+    }
+    .container-diviso .right {
+        --altezza:43%;
         --larghezza:100%;
        width: var(--larghezza);
        height: var(--altezza);
@@ -186,9 +192,10 @@ html {
 /*============================================================
 //--//-->  Classi css riguardo il testo e immagini
 ==============================================================*/
-/*questa classe è per il titolo e paragrafo*/
+/*questa classe è stata aggiunta da me*/
+
 .titolo{
-    --size-testo:2.2rem;
+    --size-testo:2rem;
     font-size: var(--size-testo);
     color: var(--colore-titolo);
     text-align: center;
@@ -196,13 +203,14 @@ html {
     padding: var(--padding);
 }
 .paragrafo {
-    --size-testo:1.3rem;
+    --size-testo:1.2rem;
     font-size: var(--size-testo);
     color: var(--colore-testo1);
     text-align: left;
     letter-spacing: var(--letter-spacing);
     padding: var(--padding);
 }
+
 @media (max-width:678px) {
     .titolo {
         --size-testo:1.6rem;
@@ -215,11 +223,11 @@ html {
 }
 @media (max-width:360px) {
     .titolo {
-        --size-testo:1.4rem;
+        --size-testo:1.2rem;
         font-size: var(--size-testo);
     }
     .paragrafo{
-        --size-testo:0.8rem;
+        --size-testo:0.7rem;
         font-size: var(--size-testo);
     }
 }

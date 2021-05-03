@@ -23,22 +23,20 @@
 /*======================================
 //--//-->   about
 ======================================*/
-#about .left .container-animation {
-  display: none;
-}
-.right .container-animation {display: block;}
-#about .right {
-  background-position: right bottom;
-}
-
+.container-animation {
+  height: 20vmax;
+  border: var(--border);
 }
 @media (max-width:450px){
   .homepage{
   height: 100vh;
   background: url(/assets/mobilehomepage.jfif) no-repeat  center center/cover;
-  background-color: #79746c;
+  background-color: #ddccb0;
   background-blend-mode: multiply;
-}}
+}
+#about .paragrafo{
+  font-size: 0.7rem;
+}
 @media (max-width:300px) {
   /*======================================
 //--//-->   lavori
@@ -46,7 +44,6 @@
 .bottoni button {font-size: 0.6rem;}
 .immagini {grid-template-columns: repeat(1, 1fr);}
 .immagini .image-card {margin: 0 auto;}
-}
-
+}}}
 
  

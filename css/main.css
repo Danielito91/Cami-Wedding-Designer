@@ -126,35 +126,18 @@ span.typed-cursor{
   letter-spacing: var(--letter-spacing);
 }
 #about .right {
-  background: url(/assets/cami\ sfondopulito.png);
+  background: url(/assets/camillafiorita.jpeg)no-repeat  center center/cover;;
   background-size: 30vmax;
-  background-repeat: no-repeat;
-  background-position: right top;
+  border: var(--border);
 }
 .container-animation {
-  width: 65%;
-  height: 20vmax;
-  margin-top: 5vh;
-  border-radius: 7px;
-  box-shadow: 4px 1px 52px 2px #9c9c9c;
-  background: url(/assets/attestato1.png)no-repeat  center center/cover;
-  cursor: pointer;
+  height: 30vmax;
+  border: var(--border);
 }
 .container-animation .inner-image {
   width: 100%;
   height: 100%;
-  background: var(--bg);
-  clip-path: circle(10% at 0% 0%);
-  border-radius: 7px;
-  transition: clip-path 1.5s ease-in-out;
-}
-.container-animation .foto {width: 29vmax;}
-.container-animation:hover .inner-image {clip-path: circle(75%);}
-/*.right .container-animation {display: none;}*/
-.right .container-animation {
-  width: 55%;
-  margin-right:20vh;
-  display: none;
+  border: var(--border);
 }
 /*======================================
 //--//-->   skills
