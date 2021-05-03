@@ -129,13 +129,13 @@ span.typed-cursor{
   letter-spacing: var(--letter-spacing);
 }
 #about .right {
-  background: url(/assets/camillafiorita.jpeg)no-repeat  center center/cover;;
-  background-size: 30vmax;
-  
+  background: url(/assets/camillafiorita.jpeg)no-repeat  center center/cover;
+  background-size: 30vmax; 
 }
 .container-animation {
-  height: 30vmax;
-  border: var(--border);
+  width: auto;
+  height: 29vmax;
+  border: 1px solid blue;
 }
 .container-animation .inner-image {
   width: 100%;
