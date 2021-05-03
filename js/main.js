@@ -12,19 +12,20 @@ function showPage() {
 //--//-->  Clicco
 ===========================================*/
 var chat = document.getElementById('chat');
+var container_chat = document.getElementById('footer-chat-icon');
+var icone = document.getElementById('icone_chat');
+chat.addEventListener('click',function compari() {
+    icone.classList.toggle("compari");
+})
 window.onscroll = function() {
     let y = window.pageYOffset;
     if (y>140) {
-        chat.style.right="15px"
+        container_chat.style.right="15px";
     } else {
-        chat.style.right="-999px"
+        container_chat.style.right="-999px";
+        icone.classList.remove("compari");
     }
 }
-chat.addEventListener('click',function compari() {
-    var icone = document.getElementById('icone_chat');
-    icone.classList.toggle("compari");
-})
-
 /*=========================================
 //--//-->  Funzioni per menu
 ===========================================*/
@@ -32,18 +33,23 @@ let icon_menu = document.getElementById('menu_open');
 let menu = document.getElementById('menu');
 let li_menu = document.querySelectorAll('.nav li');
 //al clicco compari e scompari menu
-icon_menu.addEventListener('click',function(){
+icon_menu.onclick=()=>{
     menu.classList.toggle('attiva');
     icon_menu.classList.toggle('fa-times');
-})
+}
 //nascondere menu al clicco di un li(elenco)
 for (let i= 0; i< li_menu.length; i++) {
     let li_definitivi= li_menu[i];
-    li_definitivi.addEventListener('click',function() {
+    li_definitivi.onclick=()=> {
         menu.classList.remove('attiva');
         icon_menu.classList.remove('fa-times');
-    })
+    }
 }
+/*icon_menu.addEventListener('click',function(){
+    menu.classList.toggle('attiva');
+    icon_menu.classList.toggle('fa-times');
+})*/
+
 //sezione lavori
 $(document).ready(function() {
     $('.button').click(function() {

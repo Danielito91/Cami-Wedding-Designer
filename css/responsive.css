@@ -10,22 +10,15 @@
       background:var(--bg);
       color: var(--colore-testo);
  }
-
 }
 @media (min-width:220px) and (max-width:800px) {
-  /*======================================
-//--//-->   lavori
-======================================*/
-.immagini {
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0rem;
-}
 /*======================================
 //--//-->   about
 ======================================*/
 .container-animation {
   height: 20vmax;
   border: var(--border);
+}
 }
 @media (max-width:450px){
   .homepage{
@@ -37,13 +30,9 @@
 #about .paragrafo{
   font-size: 0.7rem;
 }
-@media (max-width:300px) {
-  /*======================================
-//--//-->   lavori
-======================================*/
-.bottoni button {font-size: 0.6rem;}
-.immagini {grid-template-columns: repeat(1, 1fr);}
-.immagini .image-card {margin: 0 auto;}
-}}}
+}
+@media (max-width: 320px) {
+  #skills {height: auto;}
+}
 
  

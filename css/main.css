@@ -65,6 +65,9 @@ html {
 /*======================================
 //--//-->   Navbar
 ======================================*/
+.nav {
+  z-index: 101;
+}
 .nav li::before{
      content: "";
      position: absolute;
@@ -176,32 +179,16 @@ span.typed-cursor{
   background: url(/assets/velo.jpeg) no-repeat  center center/cover;
   height: 150vh;
 }
-.immagini {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 3vh;
+#skills .card-grid {
+  --altezza: 25vh;
+  --larghezza: 40vh;
+    height: var(--altezza);
+    width: var(--larghezza);
 }
-.immagini .image-card {
-  margin: 2vh;
-  position: relative;
-  width: 320px;
-  display: none;
-}
-.immagini img {width: 100%;}
-.immagini .dettagli {
-  position: absolute;
-  bottom: 0;
-  height: 8vmax;
-  padding: 20px;
-  background:  rgba(0,0,0,0.6);
+#skills .card-grid .image-card {
+  height: 100%;
   width: 100%;
-}
-.immagini .dettagli span {
-  font-size: 1rem;
-  font-weight: 800;
+  display: none;
 }
 /*======================================
 //--//-->   recensioni
@@ -243,18 +230,19 @@ span.typed-cursor{
   66%{height: 140px;}
   100%{height: 200px;}
 }
+#footer-chat-icon {
+position: fixed;
+bottom: 15px;
+right: -999px;
+transition: all 1s ease-out;
+}
 .footer-chat {
   border-radius: 50%;
   background: var(--bg);
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
   padding: 10px;
   cursor: pointer;
   z-index: 1;
-  transition: all 1s ease-out;
 }
-#chat {right: -100px;}
 .footer-chat i {
   font-size: 25px;
   font-weight: 800;

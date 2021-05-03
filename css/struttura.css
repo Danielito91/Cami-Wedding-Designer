@@ -176,17 +176,17 @@ html {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
     padding: var(--padding);
     margin: var(--margin);
+    overflow-x: hidden;
 }
-@media (max-width: 468px) {
-    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 568px) {
+    .grid-4 { grid-template-columns: repeat(2, 1fr); grid-gap: 0.5rem; }
 }
 @media (max-width: 340px) {
-    .grid-4 { grid-template-columns: repeat(1, 1fr); }
+    .grid-4 { grid-template-columns: repeat(1, 1fr);grid-gap: 0.5rem; }
 }
-@media (min-width: 468px) and (max-width: 768px)  {
+@media (min-width: 568px) and (max-width: 768px)  {
     .grid-4 { grid-template-columns: repeat(3, 1fr); }
 }
 /*============================================================
