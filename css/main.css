@@ -128,7 +128,7 @@ span.typed-cursor{
 #about .right {
   background: url(/assets/camillafiorita.jpeg)no-repeat  center center/cover;;
   background-size: 30vmax;
-  border: var(--border);
+  
 }
 .container-animation {
   height: 30vmax;
@@ -230,7 +230,7 @@ span.typed-cursor{
 .icone i {
   font-size: 28px;
   font-weight: 800;
-  color:#eae6e3;
+  color:#f16c06;
   padding: 15px;
   cursor: pointer;
 }
@@ -252,8 +252,9 @@ span.typed-cursor{
   padding: 10px;
   cursor: pointer;
   z-index: 1;
+  transition: all 1s ease-out;
 }
-
+#chat {right: -999px;}
 .footer-chat i {
   font-size: 25px;
   font-weight: 800;

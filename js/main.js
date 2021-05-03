@@ -12,10 +12,19 @@ function showPage() {
 //--//-->  Clicco
 ===========================================*/
 var chat = document.getElementById('chat');
+window.onscroll = function() {
+    let y = window.pageYOffset;
+    if (y>140) {
+        chat.style.right="15px"
+    } else {
+        chat.style.right="-999px"
+    }
+}
 chat.addEventListener('click',function compari() {
     var icone = document.getElementById('icone_chat');
     icone.classList.toggle("compari");
 })
+
 /*=========================================
 //--//-->  Funzioni per menu
 ===========================================*/
