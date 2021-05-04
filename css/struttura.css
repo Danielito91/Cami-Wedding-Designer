@@ -89,7 +89,7 @@ html {
     font-size: var(--size-testo);
     cursor: pointer;
     background: var(--bg);
-    background: #342b24;
+    
 }
 .nav ul {
     transition: 1s ease-in;
@@ -157,10 +157,7 @@ html {
     margin: 0 auto;
     transform: scale(1);
 }
-.card-grid:hover{
-    transform: scale(2);
-    z-index: 100;
-}
+
 /*questa classe è un semplice grid responsive(3 colonne)*/
 .grid-3{
     max-width: 1200px;

@@ -19,6 +19,10 @@
   height: 20vmax;
   border: var(--border);
 }
+#immagine-zoom {
+  width: 90vw;
+ height: auto;
+}
 }
 @media (max-width:450px){
   .homepage{
@@ -38,9 +42,11 @@
   .grid-3 {height: auto;}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 970px) {
   .grid-3{ grid-template-columns: repeat(2, 1fr); grid-gap: 0.5rem; }
+  
 }
-@media (max-width: 590px) {
+@media (max-width: 768px) {
   .grid-3 { grid-template-columns: repeat(1, 1fr);grid-gap: 0.5rem; }
+  #skills {  height: 150vh;}
 }

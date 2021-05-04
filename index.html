@@ -21,8 +21,8 @@
 <!--navbar-->
 <nav id="navbar">
     <div class="nav" id="toggle-color">
-     <!--<img class="foto" src="/assets/logo.png" id="logo" alt=""> -->
-      <div>Questo è il logo</div>
+     <img class="foto-logo" src="/assets/—Pngtree—wedding couple glyph icon vector_5195373.png" id="logo" alt=""> 
+     <!-- <div>Questo è il logo</div>-->
         <i class="fas fa-bars" id="menu_open"></i>
         <ul class="flex" id="menu">
             <li><a href="#home">Home</a></li>
@@ -67,6 +67,10 @@
 <!--lavori-->
 <section id="skills">
     <a name="work"></a>
+    <div class="foto-zoom flex-center" id="foto-zoom">
+        <i class="fas fa-times" id="remove"></i>
+        <img  src="" alt="" id="immagine-zoom">
+    </div>
     <div class="lavori">
     <div class="title">
         <h1>I miei lavori</h1>
@@ -78,12 +82,10 @@
     <div class="bottoni">
     <button class="button" data-filter="Torte">Torte</button>
     <button class="button" data-filter="Confettata">Confettata</button>
-    <button class="button" data-filter="Centro">C.Tavola</button>
+    <button class="button" data-filter="Centro">Centro<br>Tavola</button>
     <button class="button" data-filter="fiori">Fiori</button>
     </div>
-    <div class="grid-3 centro">
-      <!--<div class="image-card filter fiori"> -->
-          
+    <div class="grid-3 centro container_foto" id="grid-3">
     <div class="card-grid">
         <img class="image-card filter Torte" src="/assets/tortaok.png" alt="">
         <img class="image-card filter Confettata" src="/assets/confettataok.png" alt="">
@@ -103,18 +105,6 @@
         <img class="image-card filter fiori" src="/assets/sfondo Homepage.jpg" alt="">
     </div>
     <div class="card-grid">
-        <img class="image-card filter Torte" src="" alt="">
-        <img class="image-card filter Confettata" src="" alt="">
-        <img class="image-card filter Centro" src="" alt="">
-        <img class="image-card filter fiori" src="" alt="">
-    </div>
-    <div class="card-grid">
-        <img class="image-card filter Torte" src="" alt="">
-        <img class="image-card filter Confettata" src="" alt="">
-        <img class="image-card filter Centro" src="" alt="">
-        <img class="image-card filter fiori" src="" alt="">
-    </div>
-    <div class="card-grid">
         <img class="image-card filter Torte" src="/assets/My Post (12).png" alt="">
         <img class="image-card filter Confettata" src="/assets/confetti.jpeg" alt="">
         <img class="image-card filter Centro" src="/assets/ulivo-centrotavola.jpeg" alt="">
@@ -123,8 +113,13 @@
     </div>
 </section>
 
-<section id="recensioni">
-    <div class="recensioni"></div>
+
+  <div class="slide flex-center">
+            <img id="change" src="/assets/prova.jpeg" alt="cami">
+            </div>
+
+    </div>
+    </div>
 </section>
 
 <!--footer chat-->

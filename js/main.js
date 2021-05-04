@@ -21,13 +21,34 @@ window.onscroll = function() {
     let y = window.pageYOffset;
     if (y>140) {
         container_chat.style.right="15px";
-        div_nav.classList.add('bg-div');
+       
     } else {
         container_chat.style.right="-999px";
         icone.classList.remove("compari");
-        div_nav.classList.remove('bg-div');
+        
     }
 }
+/*=========================================
+//--//-->  foto zoom
+===========================================*/
+let container_immagini = document.getElementById('foto-zoom');
+let immagini = document.querySelectorAll('.card-grid .image-card');
+let immagine_zoom = document.getElementById('immagine-zoom');
+let remove_zoom = document.getElementById('remove');
+for (let i= 0; i < immagini.length; i++) {
+   immagini[i].onclick = ()=> {
+     immagine_zoom.src = immagini[i].src;
+     container_immagini.classList.add('zoom-attivo');
+     //document.style.overflowY = "hidden";
+   }
+   //rimuovo 
+   remove.onclick=()=> {
+    immagine_zoom.src = "";
+    container_immagini.classList.remove('zoom-attivo');
+    //document.style.overflowY = "scroll";
+   }
+}
+
 /*=========================================
 //--//-->  Funzioni per menu
 ===========================================*/
@@ -73,3 +94,27 @@ $(document).ready(function() {
     }
 //scroll element
 ScrollOut({})
+
+
+ //cambio immagini
+ var secondi=1;
+ var num=0;
+ function CambiaImmagine() {
+     var immagini=new Array();
+     var change = document.getElementById("change");
+     immagini[0]="/assets/prova.jpeg";
+     immagini[1]="/assets/attestato1.png";
+     immagini[2]="/assets/centrotavola3.png"; 
+     immagini[3]="/assets/tortaok.png";
+     immagini[4]="/assets/ulivo-centrotavola.jpg";
+     immagini[5]="/assets/tortaok5.png"; 
+     immagini[6]="/assets/tortaok5.png";
+     immagini[7]="/assets/torttaok4.png";
+     immagini[8]="/assets/tortaok5.png"; 
+     immagini[9]="/assets/My Post.png";
+     immagini[10]="/assets/torttaok4.png";
+     change.src=immagini[num];
+     num=(num+1>=immagini.length)?0:num+1;
+     setTimeout("CambiaImmagine()",secondi*2000);
+ }
+ CambiaImmagine();  
