@@ -138,12 +138,10 @@ span.typed-cursor{
 .container-animation {
   width: auto;
   height: 29vmax;
-  border: 1px solid blue;
 }
 .container-animation .inner-image {
   width: 100%;
   height: 100%;
-  border: var(--border);
 }
 /*======================================
 //--//-->   skills
@@ -180,7 +178,7 @@ span.typed-cursor{
 }
 /*sezione immagini*/
 #skills {
-  background: url(/assets/velo.jpeg) no-repeat  center center/cover;
+  background: url(/assets/provaulivoremove.png)no-repeat left;
   height: 100vh;
   position: relative;
 }
@@ -226,15 +224,26 @@ span.typed-cursor{
 ======================================*/
 .slide {
   height: 100vh;
-  border: 1px solid rosybrown;
   color: var(--color-text);
-  background: url(/assets/ulivo\ sfondo.jfif)no-repeat left;
-  
+  background: url(/assets/provaulivoremove.png)no-repeat ;
+  border:var(--border);
+}
+.slide,.titolo-slide{
+  flex-direction: column;
+  margin-bottom: 3rem;
+  font-weight: 800;
+  --size-testo:2.5rem;
+  font-size: var(--size-testo);
+  color: black;
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+  padding: var(--padding);
 }
 #change{
   width: var(--larghezza-immagini);
-  width: 45vmax;
-  border: 1px solid rgb(13, 172, 74);
+  width: 37vmax;
+  height: 35vmax;
+  border-radius: 15px;
 }
  /*======================================
 //--//-->   footer chat

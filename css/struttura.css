@@ -124,7 +124,7 @@ html {
 .container-diviso .left,.right {
     --larghezza: 50%;
     width: var(--larghezza);
-    border: 1px solid goldenrod;
+    
 }
 @media (max-width:678px) {
     .container-diviso {flex-direction: column-reverse;}
@@ -152,7 +152,6 @@ html {
     --larghezza: 20vh;
     height: var(--altezza);
     width: var(--larghezza);
-    border:var(--border);
     padding: var(--padding);
     margin: 0 auto;
     transform: scale(1);
