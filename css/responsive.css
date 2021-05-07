@@ -17,8 +17,9 @@
 ======================================*/
 
 .container-animation {
-  height: 20vmax;
-  border: var(--border);
+  height: 20vmax;}
+  .footerend p{ 
+    font-size: 12px;
 }
 /*======================================
 //--//-->   work
