@@ -89,6 +89,7 @@ html {
     font-size: var(--size-testo);
     cursor: pointer;
     background: var(--bg);
+    position: relative;
     
 }
 .nav ul {
@@ -153,8 +154,9 @@ html {
     height: var(--altezza);
     width: var(--larghezza);
     padding: var(--padding);
+    padding: 5px;
     margin: 0 auto;
-    transform: scale(1);
+    
 }
 
 /*questa classe è un semplice grid responsive(3 colonne)*/

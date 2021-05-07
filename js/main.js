@@ -39,7 +39,6 @@ for (let i= 0; i < immagini.length; i++) {
    immagini[i].onclick = ()=> {
      immagine_zoom.src = immagini[i].src;
      container_immagini.classList.add('zoom-attivo');
-     //document.style.overflowY = "hidden";
    }
    //rimuovo 
    remove.onclick=()=> {
@@ -103,7 +102,7 @@ ScrollOut({})
      var immagini=new Array();
      var change = document.getElementById("change");
      immagini[0]="/assets/prova.jpeg";
-     immagini[1]="/assets/slideok.jpeg";
+     immagini[1]="/assets/fiorite.jpeg";
      immagini[2]="/assets/slid.jpeg"; 
      immagini[3]="/assets/slide6.jpeg";
      immagini[4]="/assets/slideok1.jpeg";
@@ -115,6 +114,52 @@ ScrollOut({})
      immagini[10]="/assets/torte2.jpg";
      change.src=immagini[num];
      num=(num+1>=immagini.length)?0:num+1;
-     setTimeout("CambiaImmagine()",secondi*2000);
+     setTimeout("CambiaImmagine()",secondi*4000);
  }
  CambiaImmagine();  
+
+ //implemento libreria 
+
+ (function ($) {
+    var magnifPopup = function() {
+        $('.popup-img').magnificPopup({
+          type: 'image',
+          removalDelay: 300,
+          mainClass: 'mfp-with-zoom',
+          gallery: {
+            enabled: true
+          },
+          zoom: {
+            enabled: true,
+            duration: 300, // durata in millesecondi
+            easing: 'ease-in-out', //transizione
+            opener: function(openerElement) {
+              return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+          }
+        });
+      };
+      magnifPopup();})(jQuery);
+     
+    //sezione lavori
+    $(document).ready(function() {
+        $('.button').click(function() {
+            var value = $(this).attr('data-filter');
+            $('.elenco-foto img').show();
+            $('.elenco-foto').css('height','auto');
+            $('.filter').not("." + value).hide();
+            $('.filter').filter("." + value).show();
+        })
+    })
+    //swiper
+    var swiper = new Swiper(".mySwiper", {
+        effect: "flip",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });

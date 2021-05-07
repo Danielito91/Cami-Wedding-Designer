@@ -19,10 +19,49 @@
   height: 20vmax;
   border: var(--border);
 }
+/*======================================
+//--//-->   work
+======================================*/
 #immagine-zoom {
   width: 90vw;
  height: auto;
 }
+/*======================================
+//--//-->  nav
+======================================*/
+.logo img {
+  --larghezza-immagini:20vmax;
+  width: var(--larghezza-immagini);
+}
+}
+
+/*======================================
+//--//-->   skills lavori
+======================================*/
+@media (max-width: 320px) {
+  .grid-3 {height: auto;}
+  .logo img {
+    --larghezza-immagini:9.5vmax;
+    width: var(--larghezza-immagini);
+  }
+}
+
+@media (max-width: 970px) {
+  .grid-3{ grid-template-columns: repeat(2, 1fr); grid-gap: 0.5rem; }
+  
+}
+@media (max-width: 768px) {
+  .grid-3 { grid-template-columns: repeat(1, 1fr);grid-gap: 0.5rem; }
+  .swiper-container {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+  }
+  .swiper-slide {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
 }
 @media (max-width:450px){
   .homepage{
@@ -34,19 +73,14 @@
 #about .paragrafo{
   font-size: 0.7rem;
 }
+.swiper-container {
+  width: 280px;
+  height: 280px;
+  padding: 20px;
 }
-/*======================================
-//--//-->   skills lavori
-======================================*/
-@media (max-width: 320px) {
-  .grid-3 {height: auto;}
+.swiper-slide {
+  width: 210px;
+  height: 210px;
+  margin: 0 auto;
 }
-
-@media (max-width: 970px) {
-  .grid-3{ grid-template-columns: repeat(2, 1fr); grid-gap: 0.5rem; }
-  
-}
-@media (max-width: 768px) {
-  .grid-3 { grid-template-columns: repeat(1, 1fr);grid-gap: 0.5rem; }
-  #skills {  height: 150vh;}
 }

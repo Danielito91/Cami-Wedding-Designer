@@ -12,17 +12,20 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/struttura.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/librerie/lavori/stile.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="icon" href="favicon.ico">
 </head>
 <div id="preloader">
 <div></div><div></div><div></div>
 </div>
 <body onload="showPage()">
-<!--navbar-->
+<!--NAVBAR-->
 <nav id="navbar">
     <div class="nav" id="toggle-color">
-     <img class="foto-logo" src="/assets/—Pngtree—wedding couple glyph icon vector_5195373.png" id="logo" alt=""> 
-     <!-- <div>Questo è il logo</div>-->
+        <div class="logo">
+            <img class="foto-logo" src="/assets/Logomod.png" id="logo" alt=""> 
+        </div>
         <i class="fas fa-bars" id="menu_open"></i>
         <ul class="flex" id="menu">
             <li><a href="#home">Home</a></li>
@@ -31,7 +34,8 @@
         </ul>
     </div>
 </nav>
-  <!--homepage-->
+
+  <!--HOMEPAGE-->
   <section id="homepage">
     <a name="home"></a>
   <div class="homepage">
@@ -41,7 +45,8 @@
         </div>
   </div>
 </section>
-<!--chi sono-->
+
+<!--ABOUT-->
 <section id="about">
 <a name="about"></a>
 <div class="container-diviso">
@@ -61,20 +66,14 @@
             </div>
         </div>
     </div>
-    <div class="right flex"></div>
+  <div class="right flex"></div>
 </div>
 </section>
-<!--lavori-->
 
+<!--lAVORI-->
 <section id="skills">
-    
     <a name="work"></a>
-    <div class="foto-zoom flex-center" id="foto-zoom">
-        <i class="fas fa-times" id="remove"></i>
-        <img  src="" alt="" id="immagine-zoom">
-    </div>
     <div class="lavori">
-        
     <div class="title">
         <h1>I miei lavori</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
@@ -82,71 +81,193 @@
             dolore aspernatur officia sapiente vel quas repellat!
         </p>
     </div>
-    <div class="bottoni">
-    <button class="button" data-filter="Torte">Torte</button>
-    <button class="button" data-filter="Confettata">Confetti</button>
-    <button class="button" data-filter="Centro">C.Tavola</button>
-    <button class="button" data-filter="fiori">Fiori</button>
-    </div>
-    <div class="grid-3 centro container_foto" id="grid-3">
-    <div class="card-grid">
-        <img class="image-card filter Torte" src="/assets/tortaok.png" alt="">
-        <img class="image-card filter Confettata" src="/assets/confettataok.png" alt="">
-        <img class="image-card filter Centro" src="/assets/centrotavolaok.png" alt="">
-        <img class="image-card filter fiori" src="/assets/Mr mrs fiori.jpg" alt="">
-    </div>
-    <div class="card-grid">
-        <img class="image-card filter Torte" src="/assets/tortaok5.png" alt="">
-        <img class="image-card filter Confettata" src="/assets/confettataok1.png" alt="">
-        <img class="image-card filter Centro" src="/assets/centrotavola3.jpeg" alt="">
-        <img class="image-card filter fiori" src="/assets/Mr mrs fiori.jpg" alt="">
-    </div>
-    <div class="card-grid">
-        <img class="image-card filter Torte" src="/assets/torttaok4.png" alt="">
-        <img class="image-card filter Confettata" src="/assets/confettataok3.png" alt="">
-        <img class="image-card filter Centro" src="/assets/centrotavola1.jpeg" alt="">
-        <img class="image-card filter fiori" src="/assets/sfondo Homepage.jpg" alt="">
-    </div>
-    <div class="card-grid">
-        <img class="image-card filter Torte" src="/assets/My Post (12).png" alt="">
-        <img class="image-card filter Confettata" src="/assets/confetti.jpeg" alt="">
-        <img class="image-card filter Centro" src="/assets/ulivo-centrotavola.jpeg" alt="">
-        <img class="image-card filter fiori" src="/assets/sfondo Homepage.jpg" alt="">
-    </div>
-    
-</div>
-
-    </div>
-</section>
-
-
-  <div class="slide flex-center">
-      <div class="titolo-slide">~Le mie Creazioni~</div>
+    <!--FILTRO IMMAGINI-->
+    <div class="skills-list flex-responsive">
+        <div class="flex">
+            <li class="button" data-filter="torte">Torte</li>
+            <li class="button" data-filter="confettata">Confettata</li>
+        </div>
+        <div class="flex">
+            <li class="button" data-filter="centro">Centro tavola</li>
+            <li class="button" data-filter="fiori">Fiori</li>
+        </div>
+      </div>
+      <div class="elenco-foto">
+        <div class="container-foto grid-3">
+            <!--prima foto (torte)-->
+            <div class="fotografie card-grid filter torte">
+              <a class="popup-img" href="/assets/torte2.jpg">
+                <img src="/assets/torte2.jpg" alt="img">
+              </a>
+              </div>
+               <!--secondo foto (torte)-->
+              <div class="fotografie card-grid filter torte">
+              <a class="popup-img" href="/assets/torte1.jpg">
+                <img src="/assets/torte1.jpg" alt="img">
+              </a>
+              </div>
+              <!--terzo foto (torte)-->
+              <div  class="fotografie card-grid filter torte">
+                <a class="popup-img" href="/assets/torta9.jpeg">
+                  <img src="/assets/torta9.jpeg" alt="img">
+                </a>
+              </div>
+               <!--quarto (torte)-->
+              <div  class="fotografie card-grid filter torte">
+                <a class="popup-img" href="/assets/tortona.jpeg">
+                  <img src="/assets/tortona.jpeg" alt="img">
+                </a>
+              </div>
+                <!--quinta (torte)-->
+                <div  class="fotografie card-grid filter torte">
+                  <a class="popup-img" href="/assets/torta11.jpeg">
+                    <img src="/assets/torta11.jpeg" alt="img">
+                  </a>
+                </div>
+                 <!--prima foto (confettata)-->
+            <div class="fotografie card-grid filter confettata">
+              <a class="popup-img" href="/assets/confetti.jpeg">
+                <img src="/assets/confetti.jpeg"alt="img">
+              </a>
+              </div>
+               <!--seconda foto (confettata)-->
+              <div class="fotografie card-grid filter confettata">
+              <a class="popup-img" href="/assets/confetti1.jpeg">
+                <img src="/assets/confetti1.jpeg" alt="img">
+              </a>
+              </div>
+              <!--terzo foto (confettata)-->
+              <div  class="fotografie card-grid filter confettata">
+                <a class="popup-img" href="/assets/confetti2.jpeg">
+                  <img src="/assets/confetti2.jpeg" alt="img">
+                </a>
+              </div>
+               <!--quarto (confettata)-->
+              <div  class="fotografie card-grid filter confettata">
+                <a class="popup-img" href="/assets/tortona.jpeg">
+                  <img src="/assets/tortona.jpeg" alt="img">
+                </a>
+              </div>
+                <!--quinta (confettata)-->
+                <div  class="fotografie card-grid filter confettata">
+                  <a class="popup-img" href="/assets/torta11.jpeg">
+                    <img src="/assets/torta11.jpeg" alt="img">
+                  </a>
+                </div>
+                   <!--prima foto (centro)-->
+            <div class="fotografie card-grid filter centro">
+              <a class="popup-img" href="/assets/torte2.jpg">
+                <img src="/assets/torte2.jpg" alt="img">
+              </a>
+              </div>
+               <!--secondo foto (centro)-->
+              <div class="fotografie card-grid filter centro">
+              <a class="popup-img" href="/assets/torte1.jpg">
+                <img src="/assets/torte1.jpg" alt="img">
+              </a>
+              </div>
+              <!--terzo foto (centro)-->
+              <div  class="fotografie card-grid filter centro">
+                <a class="popup-img" href="/assets/torta9.jpeg">
+                  <img src="/assets/torta9.jpeg" alt="img">
+                </a>
+              </div>
+               <!--quarto (centro)-->
+              <div  class="fotografie card-grid filter centro">
+                <a class="popup-img" href="/assets/tortona.jpeg">
+                  <img src="/assets/tortona.jpeg" alt="img">
+                </a>
+              </div>
+                <!--quinta (centro)-->
+                <div  class="fotografie card-grid filter centro">
+                  <a class="popup-img" href="/assets/torta11.jpeg">
+                    <img src="/assets/torta11.jpeg" alt="img">
+                  </a>
+                </div>
+                   <!--prima foto (torte)-->
+            <div class="fotografie card-grid filter fiori">
+              <a class="popup-img" href="/assets/torte2.jpg">
+                <img src="/assets/torte2.jpg" alt="img">
+              </a>
+              </div>
+               <!--secondo foto (torte)-->
+              <div class="fotografie card-grid filter fiori">
+              <a class="popup-img" href="/assets/torte1.jpg">
+                <img src="/assets/torte1.jpg" alt="img">
+              </a>
+              </div>
+              <!--terzo foto (torte)-->
+              <div  class="fotografie card-grid filter fiori">
+                <a class="popup-img" href="/assets/torta9.jpeg">
+                  <img src="/assets/torta9.jpeg" alt="img">
+                </a>
+              </div>
+               <!--quarto (torte)-->
+              <div  class="fotografie card-grid filter fiori">
+                <a class="popup-img" href="/assets/tortona.jpeg">
+                  <img src="/assets/tortona.jpeg" alt="img">
+                </a>
+              </div>
+                <!--quinta (torte)-->
+                <div  class="fotografie card-grid filter fiori">
+                  <a class="popup-img" href="/assets/torta11.jpeg">
+                    <img src="/assets/torta11.jpeg" alt="img">
+                  </a>
+                </div>
+        </div>
+      </div>
+      </div>
+  </section>
+  <section id="slider-image">
+      <!--SLIDER IMMAGINI-->
+      <div class="slide flex-center">
+          <div class="titolo-slide">~Le mie Creazioni~</div>
            <img id="change" src="" alt="cami">
+      </div>
+      <!--Slider-->
+      <div class="container flex-center">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/assets/testimonials1.png"/>
             </div>
-        
+            <div class="swiper-slide">
+              <img src="/assets/testimonials2.png"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/testimonials3.png"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/testimonials4.png"/>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
     </div>
-    </div>
-</section>
-
-
-<!--footer chat-->
-<div id="footer-chat-icon">
-    <div class="icone" id="icone_chat"> 
-        <a href=""  target="_blank"><i class="fab fa-whatsapp"></i></a> 
-        <a href="https://www.instagram.com/camilla.dicarlo/"  target="_blank"> <i class="fab fa-instagram"></i> </a> 
-        <a href="https://www.facebook.com/camilla.dicarlo.14"  target="_blank"> <i class="fab fa-facebook"></i></a> 
-    </div>
-    <div class="footer-chat" id="chat">
-        <i class="far fa-comment"></i>
-    </div>
-</div>
+   </div>
+  </section>
+  <!--FOOTER-->
+  <section id="footer">
+    <!--ICON CHAT CHE COMPARE ALLO SCROLL-->
+    <div id="footer-chat-icon">
+      <div class="icone" id="icone_chat"> 
+          <a href=""  target="_blank"><i class="fab fa-whatsapp"></i></a> 
+          <a href="https://www.instagram.com/camilla.dicarlo/"  target="_blank"> <i class="fab fa-instagram"></i> </a> 
+          <a href="https://www.facebook.com/camilla.dicarlo.14"  target="_blank"> <i class="fab fa-facebook"></i></a> 
+      </div>
+      <div class="footer-chat" id="chat">
+          <i class="far fa-comment"></i>
+      </div>
+  </div>
+  </section>
 </body>
-
 <!--js librerie-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="/librerie/typed/typed.min.js"></script>
 <script src="/librerie/scroll/scroll-out.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/librerie/lavori/script.min.js"></script>
 <!--js main-->
 <script src="/js/main.js"></script>
 </html>
