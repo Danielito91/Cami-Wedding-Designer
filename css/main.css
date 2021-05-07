@@ -230,8 +230,9 @@ span.typed-cursor{
 # Testimonials
 --------------------------------------------------------------*/
 #slider-image .container {
-  background: url(/assets/provaulivoremove1.png)no-repeat ;
-  background-position: right;
+ /* background: url(/assets/provaulivoremove1.png)no-repeat ;
+  background-position: right;*/
+  background: rgba(0, 0,0, 0.35);
   height: 80vh;
 }
 .swiper-container {
@@ -250,6 +251,7 @@ span.typed-cursor{
 .swiper-slide img {
   display: block;
   width: 100%;
+  border-radius: 10px;
 }
 .swiper-button-next:after, .swiper-button-prev:after {color: var(--bg);}
 .swiper-pagination-bullet-active {
@@ -276,12 +278,12 @@ span.typed-cursor{
 .icone i {
   font-size: 28px;
   font-weight: 800;
-  color:#f16c06;
+  color:#13110f;
   padding: 15px;
   cursor: pointer;
 }
 .icone i:hover{
-  color: black;
+  color: rgb(247, 240, 240);
 }
 @keyframes comparsa {
   0% {height: 0;}
@@ -308,4 +310,34 @@ transition: all 1s ease-out;
   color: white;
 }
 
-
+ .footerend{
+  height: var(--altezza);
+  height: 30vh;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+ .footerend p{
+   margin-top: 10px;
+   font-size: var(--size-testo);
+ }
+ .footerend a{
+  text-decoration: none;
+   color: var(--bg);
+   color: black;
+ }
+ .footerend a:hover{
+   color: var(--colore-secondario);
+   color: white;
+ }
+ .footerend .icon{
+   flex-direction: row;
+   padding: var(--padding); 
+ }
+ .icon i{
+   padding: 20px;
+   border: var(--border);
+   font-size: 25px;
+ }
