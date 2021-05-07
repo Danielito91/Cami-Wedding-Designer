@@ -198,6 +198,7 @@ span.typed-cursor{
     height: var(--altezza);
     width: var(--larghezza);
     padding: 20px;
+    display: none;
 }
 .container-foto .card-grid img{width: 100%;height: 100%;}
 
@@ -334,7 +335,6 @@ transition: all 1s ease-out;
  }
  .footerend .icon{
    flex-direction: row;
-   padding: var(--padding); 
  }
  .icon i{
    padding: 20px;
