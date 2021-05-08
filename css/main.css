@@ -233,14 +233,14 @@ span.typed-cursor{
 #slider-image .container {
  /* background: url(/assets/provaulivoremove1.png)no-repeat ;
   background-position: right;*/
-  background: rgba(0, 0,0, 0.35);
+  
   height: 80vh;
 }
 .swiper-container {
   width: 500px;
   height: 500px;
   padding: 50px;
-  
+  background: rgba(0, 0,0, 0.75);
 }
 .swiper-slide {
   background-position: center;
