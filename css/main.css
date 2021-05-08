@@ -263,6 +263,13 @@ span.typed-cursor{
  /*======================================
 //--//-->   footer chat
 ======================================*/
+#footer-chat-icon {
+  position: fixed;
+  bottom: 15px;
+  right: -999px;
+  transition: all 1s ease-out;
+  z-index: 101;
+  }
 .icone {
   position: fixed;
   bottom: 45px;
@@ -282,21 +289,18 @@ span.typed-cursor{
   color:#13110f;
   padding: 15px;
   cursor: pointer;
+  transition: 0.4s ease-out;
 }
-.icone i:hover{
-  color: rgb(247, 240, 240);
-}
+.icone i:hover{transform: scale(1.3);}
+.footerend i:hover {transform:scale(1.3);}
+ .fa-instagram:hover {color: #eb3c57;}
+ .fa-facebook:hover {color: #3b5998;}
+.fa-whatsapp:hover {color: #40c351;}
 @keyframes comparsa {
   0% {height: 0;}
   33%{height: 90px;}
   66%{height: 140px;}
   100%{height: 200px;}
-}
-#footer-chat-icon {
-position: fixed;
-bottom: 15px;
-right: -999px;
-transition: all 1s ease-out;
 }
 .footer-chat {
   border-radius: 50%;
@@ -319,25 +323,24 @@ transition: all 1s ease-out;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: white;
  }
  .footerend p{
    margin-top: 10px;
    font-size: var(--size-testo);
+   color: white;
  }
+ .footerend i {transition: 0.4s ease-out;}
  .footerend a{
   text-decoration: none;
    color: var(--bg);
-   color: black;
- }
- .footerend a:hover{
-   color: var(--colore-secondario);
-   color: white;
+   color:white;
+   transition: 0.4s ease-out;
  }
  .footerend .icon{
    flex-direction: row;
  }
  .icon i{
    padding: 20px;
-   border: var(--border);
    font-size: 25px;
  }

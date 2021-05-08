@@ -19,35 +19,17 @@ chat.addEventListener('click',function compari() {
 })
 window.onscroll = function() {
     let y = window.pageYOffset;
-    if (y>140) {
+    if (y>2400) {
+        container_chat.style.right="-999px";
+        icone.classList.remove("compari"); 
+    } else if (y>140 ) {
         container_chat.style.right="15px";
        
     } else {
         container_chat.style.right="-999px";
-        icone.classList.remove("compari");
-        
+        icone.classList.remove("compari"); 
     }
 }
-/*=========================================
-//--//-->  foto zoom
-===========================================*/
-let container_immagini = document.getElementById('foto-zoom');
-let immagini = document.querySelectorAll('.card-grid .image-card');
-let immagine_zoom = document.getElementById('immagine-zoom');
-let remove_zoom = document.getElementById('remove');
-for (let i= 0; i < immagini.length; i++) {
-   immagini[i].onclick = ()=> {
-     immagine_zoom.src = immagini[i].src;
-     container_immagini.classList.add('zoom-attivo');
-   }
-   //rimuovo 
-   remove.onclick=()=> {
-    immagine_zoom.src = "";
-    container_immagini.classList.remove('zoom-attivo');
-    //document.style.overflowY = "scroll";
-   }
-}
-
 /*=========================================
 //--//-->  Funzioni per menu
 ===========================================*/
@@ -67,10 +49,6 @@ for (let i= 0; i< li_menu.length; i++) {
         icon_menu.classList.remove('fa-times');
     }
 }
-/*icon_menu.addEventListener('click',function(){
-    menu.classList.toggle('attiva');
-    icon_menu.classList.toggle('fa-times');
-})*/
 
 //sezione lavori
 $(document).ready(function() {
@@ -91,8 +69,7 @@ $(document).ready(function() {
             backSpeed: 30
         });
     }
-//scroll element
-ScrollOut({})
+
 
 
  //cambio immagini
