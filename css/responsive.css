@@ -11,11 +11,14 @@
       color: var(--colore-testo);
  }
 }
-@media (min-width:220px) and (max-width:800px) {
+@media (min-width:220px) and (max-width:768px) {
 /*======================================
-//--//-->   about
+//--//-->   about ho modificato da max -width da 800 a 768
 ======================================*/
-
+.slide {
+  height: 65vh;}
+  .enorme{
+    height: 60vh;}
 .container-animation {
   height: 20vmax;}
   /*======================================

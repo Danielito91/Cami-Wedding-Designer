@@ -78,17 +78,17 @@ $(document).ready(function() {
  function CambiaImmagine() {
      var immagini=new Array();
      var change = document.getElementById("change");
-     immagini[0]="/assets/prova.jpeg";
-     immagini[1]="/assets/fiorite.jpeg";
-     immagini[2]="/assets/slid.jpeg"; 
-     immagini[3]="/assets/slide6.jpeg";
-     immagini[4]="/assets/slideok1.jpeg";
-     immagini[5]="/assets/sposi bianconero.jpg"; 
-     immagini[6]="/assets/tavolataSlide.jpeg";
-     immagini[7]="/assets/sedie.jpg";
-     immagini[8]="/assets/tortona.jpeg"; 
-     immagini[9]="/assets/torte1.jpg";
-     immagini[10]="/assets/torte2.jpg";
+     immagini[0]="/assets/torta16.jpeg";
+     immagini[1]="/assets/ritomasseria.jpeg";
+     immagini[2]="/assets/torta6.jpeg"; 
+     immagini[3]="/assets/tavolata.jpeg";
+     immagini[4]="/assets/torta8.jpeg";
+     immagini[5]="/assets/allestimenti-vari1.jpg"; 
+     immagini[6]="/assets/allestimenti-vari.jpeg";
+     immagini[7]="/assets/torta11.jpeg";
+     immagini[8]="/assets/sedie.jpg"; 
+     immagini[9]="/assets/fiori.jpg";
+     immagini[10]="/assets/torta10.jpeg";
      change.src=immagini[num];
      num=(num+1>=immagini.length)?0:num+1;
      setTimeout("CambiaImmagine()",secondi*4000);

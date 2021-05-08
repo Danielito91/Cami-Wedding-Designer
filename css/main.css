@@ -132,6 +132,7 @@ span.typed-cursor{
   color: var(--colore-testo1);
   letter-spacing: var(--letter-spacing);
 }
+#about .titolo {color: var(--bg);}
 #about .right {
   background: url(/assets/camillafiorita.jpeg)no-repeat  center center/cover;
   background-size: 30vmax; 
@@ -157,7 +158,7 @@ span.typed-cursor{
 }
 .lavori p {
   font-size: 1rem;
-  text-align: left;
+  text-align: center;
 }
 
 /*======================================
@@ -206,17 +207,21 @@ span.typed-cursor{
 //--//-->   slide
 ======================================*/
 .slide {
-  height: 100vh;
+  height: auto;
   color: var(--color-text);
   background: url(/assets/provaulivoremove.png)no-repeat ;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  
 }
+.slide,.flex-center{padding: var(--padding); padding:0;}
 .slide,.titolo-slide{
   flex-direction: column;
   margin-bottom: 3rem;
   font-weight: 800;
-  --size-testo:2.5rem;
+  --size-testo:2rem;
   font-size: var(--size-testo);
-  color: black;
+  color:var(--bg);
   text-align: center;
   letter-spacing: var(--letter-spacing);
   padding: var(--padding);
@@ -230,17 +235,22 @@ span.typed-cursor{
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-#slider-image .container {
+ /*#slider-image .container {
  /* background: url(/assets/provaulivoremove1.png)no-repeat ;
-  background-position: right;*/
-  
-  height: 80vh;
+  background-position: right;
+  height: 20vh;
+  border: var(--border);
+}*/
+.enorme{
+  height: 50vh;
+  background: rgba(0, 0,0, 0.75);
 }
+
 .swiper-container {
   width: 500px;
   height: 500px;
   padding: 50px;
-  background: rgba(0, 0,0, 0.75);
+  
 }
 .swiper-slide {
   background-position: center;
