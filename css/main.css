@@ -347,6 +347,7 @@ span.typed-cursor{
    color:white;
    transition: 0.4s ease-out;
  }
+ .footerend a:hover{color: black;}
  .footerend .icon{
    flex-direction: row;
  }
