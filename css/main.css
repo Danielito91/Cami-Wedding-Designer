@@ -96,7 +96,7 @@ html {
 
 .homepage{
   height: 100vh;
-  background: url(/assets/sedie.jpg) no-repeat  center center/cover;
+  background: url(/assets/sfondo\ Homepage.jpg) no-repeat  center center/cover;
   z-index: -1001;
   display: flex;
   justify-content: center;
@@ -287,11 +287,11 @@ span.typed-cursor{
   right: 0;
   display: flex;
   flex-direction: column;
-  opacity: 0;
+  display: none;
   transition: 2s;
   height: 200px;
 }
-.compari {opacity: 1;animation: comparsa 2s;} /*far comparire icone al clicco*/
+.compari {display: flex; flex-direction: column; animation: comparsa 2s;} /*far comparire icone al clicco*/
 
 .icone i {
   font-size: 28px;

@@ -21,6 +21,7 @@
     height: 60vh;}
 .container-animation {
   height: 20vmax;}
+  
   /*======================================
 //--//-->  footer
 ======================================*/
@@ -53,6 +54,11 @@
     --larghezza-immagini:9.5vmax;
     width: var(--larghezza-immagini);
   }
+  .skills-list li {
+    font-size: 18px;
+    padding: 5px;
+    margin: 7px;  
+}
 }
 
 @media (max-width: 970px) {

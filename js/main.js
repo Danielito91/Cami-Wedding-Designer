@@ -81,7 +81,7 @@ $(document).ready(function() {
      immagini[0]="/assets/torta16.jpeg";
      immagini[1]="/assets/ritomasseria.jpeg";
      immagini[2]="/assets/torta6.jpeg"; 
-     immagini[3]="/assets/tavolata.jpeg";
+     immagini[3]="/assets/torta22.jpeg";
      immagini[4]="/assets/torta8.jpeg";
      immagini[5]="/assets/allestimenti-vari1.jpg"; 
      immagini[6]="/assets/allestimenti-vari.jpeg";
