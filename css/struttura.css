@@ -12,6 +12,7 @@ html {
 }
 :root {
     /*colori,sfondi e altro*/
+    --bg: #684b33; /*background color*/
     --sfondo-elementi: #223446;
     --colore-testo: white;
     --bg-page: rgb(243, 226, 226);
@@ -43,7 +44,7 @@ html {
   ::-webkit-scrollbar-thumb {
     min-height: 0.8em;
     min-width: 0.8em;
-    background: var(--sfondo-elementi);
+    background: var(--bg);
 }
 /*============================================================
 //--//-->  Classi css riguardo i display (flex)

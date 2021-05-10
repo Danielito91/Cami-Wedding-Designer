@@ -66,7 +66,7 @@ html {
 //--//-->   Navbar
 ======================================*/
 .logo img {
-  --larghezza-immagini:10vmax;
+  --larghezza-immagini:200px;
   width: var(--larghezza-immagini);
 }
 .nav {
@@ -96,7 +96,7 @@ html {
 
 .homepage{
   height: 100vh;
-  background: url(/assets/sfondo\ Homepage.jpg) no-repeat  center center/cover;
+  background: url(/assets/paesano.png) no-repeat  center center/cover;
   z-index: -1001;
   display: flex;
   justify-content: center;

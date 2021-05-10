@@ -39,10 +39,7 @@
 /*======================================
 //--//-->  nav
 ======================================*/
-.logo img {
-  --larghezza-immagini:20vmax;
-  width: var(--larghezza-immagini);
-}
+
 }
 
 /*======================================
@@ -50,10 +47,6 @@
 ======================================*/
 @media (max-width: 320px) {
   .grid-3 {height: auto;}
-  .logo img {
-    --larghezza-immagini:9.5vmax;
-    width: var(--larghezza-immagini);
-  }
   .skills-list li {
     font-size: 18px;
     padding: 5px;
@@ -66,6 +59,10 @@
   
 }
 @media (max-width: 768px) {
+  .logo img {
+    --larghezza-immagini:170px;
+    width: var(--larghezza-immagini);
+  }
   .grid-3 { grid-template-columns: repeat(1, 1fr);grid-gap: 0.5rem; }
   .swiper-container {
     width: 400px;
@@ -79,6 +76,10 @@
   }
 }
 @media (max-width:450px){
+  .logo img {
+    --larghezza-immagini:120px;
+    width: var(--larghezza-immagini);
+  }
   .homepage{
   height: 100vh;
   background: url(/assets/mobilehomepage.jfif) no-repeat  center center/cover;
